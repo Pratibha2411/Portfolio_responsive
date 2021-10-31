@@ -1,0 +1,5 @@
+@use "custom";
+// here we are using imported bootstrap file in our style files
+// after this go to style.css file to see the changes there you'll see all the style added
+// from there go to the html file & add that style in html file by using <link rel="stylesheet" href="assets/css/style.css">.
+// go back to _custom.scss to overwrite some css
