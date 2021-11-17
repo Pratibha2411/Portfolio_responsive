@@ -1,0 +1,46 @@
+@use "../custom" as *;
+@use "../components/mixin" as *;
+
+// Styling button
+
+.btn-rounded {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  position: relative;
+  padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+  font-weight: 500;
+  margin: 0;
+  border: 0.1rem solid rgba($white, 0.6);
+  background-color: $white;
+  //   now we want hover style so go down at &:hover
+
+  span {
+    position: absolute;
+    background-color: $secondary; //here we are using secondary variable which is from custom module so add custome module here as well on the top of te code like: @use "../custom" as *;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    // after this we'll add some icon so go to index.html>btn>span
+
+    i {
+      color: $white;
+      font-size: 1rem;
+      line-height: 2.5rem;
+      //   now for adding background color for icon btn go to btn-rounded class above & add background-color up there
+    }
+  }
+
+  &:hover {
+    color: $white;
+    @include gradient; //to do so add componets module on the top of the code here: @use "../components/mixin" as *;
+    span {
+      background-color: rgba($black, 0.6);
+    }
+  }
+}
+
+// now add this class to index.html in button code here:   <button type="button" class="rounded-pill btn-rounded">+91 7049063782</button>

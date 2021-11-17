@@ -1,11 +1,14 @@
 // IMPORT BOOTSTRAP 5
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-// here we imported our boostrap file
-// now go to style.scss file to use this imported bootstrap file in style files.
-// to overwrite style go to the bootstrap modules to find variables.scss this file will open as in another tab so check it there & see @primary default color & go to all white & gray color & copy Them & paste them here down
+// copy purple & pink color from varoable.scss file & do same with'em
+// My Theme Colors: purple & pink color
+$purple_dark: #0c0a0a;
+$purple_light: #555558;
+$pink: #2c2b2b;
+$footer: #151514;
+//  removed all the default form each line
 
 // While & Gray colors
-$white: #fff;
+$white: rgb(241, 237, 237);
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -18,14 +21,32 @@ $gray-900: #212529;
 $black: #000;
 // removed all the default form each line
 
-// then copy purple & pink color from varoable.scss file & do same with'em
-// My Theme Colors: purple & pink color
-$purple_dark: #9926f0;
-$purple_light: #bb6ef5;
-$pink: #d122e3;
-//  removed all the default form each line
-
 // Copy Primary & secondary color from variable.scss
 $primary: $purple_dark;
 $secondary: $pink;
 // here added primary & secondary color
+
+// Accordion overriding
+
+//  now we'll change accordian css so go to the variable.scss file & look there for "accordian variable"
+// & look over the variable for accordian color & for accordian icon & copy them form there & paste here
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+// At-last part FAQ
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
+// now we'll copy accordion btn icon & acordion btn active icon form variable.scss & paste it here & there uh will see SVG code which is for collapse btn but we need + icon for collapse so we'll search for bootstrap icons &
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z'/></svg>");
+
+// & for now we want a large sized icon so copy icon size & paste it here
+$accordion-icon-width: 1.875rem;
+
+// after this we'll create 2 folder in scss folder which are named as component & section folder in each folder we'll create new files in there & then we'll import all these fles in main Style.scss File
+// Now for further theory go to style.scss file
+
+// IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// here we imported our boostrap file
+// now go to style.scss file to use this imported bootstrap file in style files.
+// to overwrite style go to the bootstrap modules to find variables.scss this file will open as in another tab so check it there & see @primary default color & go to all white & gray color & copy Them & paste them here  down

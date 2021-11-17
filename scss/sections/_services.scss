@@ -1,0 +1,38 @@
+@use "../custom" as *;
+
+// After adding illustration for Projects Part coming here to style the Content
+
+.services {
+  position: relative;
+  padding: 1rem 0;
+
+  &__content {
+    padding: 1rem;
+    margin-top: 0rem;
+
+    p {
+      font-size: 0.8rem;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1rem;
+      }
+    }
+
+    @include media-breakpoint-up(ld) {
+      margin-top: 5rem;
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      color: $primary;
+
+      @include media-breakpoint-up(ld) {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+  // to centarized the pic in the content use the bottom style or uncomment it for that style in Projects per pic & content
+  &__pic {
+    max-width: 100%;
+  }
+}

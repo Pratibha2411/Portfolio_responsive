@@ -26,7 +26,7 @@
     compile:sass is the name you can give any other you want to, then: "sass"(it's our package we installed) "scss"(it's the source of our sass file- whick will keep all our sass files) then after : "destination where we want to keep compiled css-(assests/css)"
     so Create new foleder in your Project name by "scss" &in this folder create new file named "style.scss".
 2.  in cmd start .script so run command " npm run compile:sass"(here "sass" is the name of the script, which can be any name according to you.)[hit enter]
-3.  in VS code you have new folder Assests and assets aso have files.
+3.  in VS code you have new folder Assests and assets also have files.
 4.  Search files extension for General Knowledge on Google.
 
 > > >                   SETUP-END

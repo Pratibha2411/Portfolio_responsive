@@ -1,0 +1,50 @@
+@use "../custom" as *;
+@use "../components/mixin" as *;
+
+.intro-section {
+  @include gradient;
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+// coming from index.html after adding vdo btn & pic styling down
+.intros {
+  .video-box {
+    position: relative;
+
+    a {
+      //   @include absoluteCenter;
+      span {
+        i {
+          font-size: 6rem;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+// after this go to mixin.scss for further here: Adding ABSOLUTE CENTER
+// then come here again & go to index.html again
+
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid $secondary;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+
+  &--border-1 {
+    animation-delay: 1s;
+  }
+  &--border-2 {
+    animation-delay: 1.5s;
+  }
+}
+
+// for animation go to animation.scss for the animation for vdo btn border
+
+// after this to add vdo behine the vdo btn we need to create JS which is Js lightbox so in this case we'll use Glightbox so search GLightbox then click on link "biati-digital.github.io/glightbox/

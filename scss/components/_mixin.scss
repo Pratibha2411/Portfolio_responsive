@@ -1,0 +1,32 @@
+@use "../custom" as *;
+
+// 1st you have to create gradient here
+
+// GRADIENT MIXIN
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
+}
+// now uhh will get error so to resolve that error add custom module "@use "../custom" as *;"on the top of the code
+// & go to navbar.scss & add mixin module there as well using this @use "../components/mixin" as *;
+
+//  & after adding this come here Again & then for further we'll add style for btn which is for mobile number so go to button.scss file for further
+
+// Adding ABSOLUTE CENTER
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Portfolio content TRANSITION PROPERTY
+@mixin transitionProperty {
+  transition-duration: 1500ms;
+  transition-property: all;
+}
+
+// now add this mixin in the portfolio file in hover content

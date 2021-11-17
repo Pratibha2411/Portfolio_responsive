@@ -3,3 +3,25 @@
 // after this go to style.css file to see the changes there you'll see all the style added
 // from there go to the html file & add that style in html file by using <link rel="stylesheet" href="assets/css/style.css">.
 // go back to _custom.scss to overwrite some css
+
+// 2. here now we'll import all scss files which are in newly made folders whose name is component folder & section folder
+
+// IMPORT THE COMPONENTS
+
+@use "components/animations";
+@use "components/button";
+@use "components/mixin";
+@use "components/typography";
+
+// IMPORT THE SECTIONS
+@use "sections/navbar";
+@use "sections/intro-section";
+@use "sections/campanies";
+@use "sections/services";
+@use "sections/testimonials";
+@use "sections/faq";
+@use "sections/portfolio";
+@use "sections/get-started";
+@use "sections/footer";
+
+// DONE with Importing Now again go to folder & create index.html there & for further info watch out index.html

@@ -1,0 +1,90 @@
+@use "../custom" as *;
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  // font-family: "Roboto", sans-serif;
+
+  &--intro {
+    display: inline-block;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+
+  &--description {
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+    margin-top: 1.2rem;
+    text-transform: none;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.4rem;
+      display: inline-block;
+    }
+  }
+}
+
+// now for further go to intro-section.scss file which is already created in section folder so for further info go to intro-section.scss
+
+// now down there we'll add style for project details heading  HEADING LINE
+
+.heading-line::after {
+  content: "";
+  width: 9rem;
+  padding-top: 0.1rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: $primary;
+}
+.heading-line::before {
+  content: "";
+  width: 11rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: $primary;
+}
+
+// now going to add this class in index.html below the heading
+
+// DISPLAY 3
+.display-3 {
+  font-family: "Poppins", sans-serif;
+
+  &--title {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background-image: linear-gradient(to right, $primary, $purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+// BORDER RIFGHTs
+.border-right {
+  border-right: 0.1rem solid $gray-300;
+  height: 100%;
+}
+
+// GRADIENT BG FOR CONTACT PAGE
+
+.gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
+}
+// again go to index file for contact

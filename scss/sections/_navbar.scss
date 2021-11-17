@@ -1,0 +1,20 @@
+@use "../custom" as *;
+@use "../components/mixin" as *;
+// @use "../components/mixin" as *; adding mixin module here
+
+// making a new class for the overlook of background of webpage & go to index.html & add meny class in navbar.
+
+// For Navbar
+.menu {
+  @include gradient;
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $white !important;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+  }
+}
+//coz we are goin' to use this gradients so many times so Now go to mixin.scss file for further style
